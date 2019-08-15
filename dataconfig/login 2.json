@@ -1,0 +1,30 @@
+{
+	"idParam": {
+		"id": 1
+	},
+	"pageParam": {
+		"pageNum": 1,
+		"pageSize": 10
+	},
+	"userParam": {
+		"code": "9LSA",
+		"mobileNo": "13057505355",
+		"password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+		"sysName": "TEA_B2C"
+	},
+	"normIdsDTO": {
+		"adrrId": 701,
+		"shopList": [{
+			"couponId": "",
+			"normList": [{
+				"goodsNum": 2,
+				"normId": 963,
+				"seckillId": ""
+			}],
+			"orderRemark": "string"
+		}]
+	},
+	"orderNum": {
+		"orderNum": "156006678856241013"
+	}
+}

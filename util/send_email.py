@@ -12,7 +12,7 @@ class SendEmail:
     password = "58832534zjh**"
     def send_mail(self,user_list,sub,content):
         user = "JHzhang" + "<" + send_user + ">"
-        message = MIMEText(content,_subtype='plain',_charset='utf-8')
+        message = MIMEText(content, subtype='plain', charset='utf-8')
         message['Subject'] = sub
         message['From'] = user
         message['To'] = ";".join(user_list)

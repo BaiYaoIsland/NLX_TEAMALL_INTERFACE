@@ -1,19 +1,19 @@
 # coding:utf-8
 from enum import Enum
 
-class global_var(Enum):
-    Id = '1'
-    module = '2'
-    url = '3'
-    run = '4'
-    request_way = '5'
-    header = '6'
-    case_depend = '7'
-    data_depend = '8'
-    field_depend = '9'
-    data = '10'
-    expect = '11'
-    result = '12'
+class GLOBAL_VAR(Enum):
+    ID = '1'
+    MODULE = '2'
+    URL = '3'
+    RUN = '4'
+    REQUEST_WAY = '5'
+    HEADER = '6'
+    CASE_DEPEND = '7'
+    DATA_DEPEND = '8'
+    FIELD_DEPEND = '9'
+    DATA = '10'
+    ECPECT = '11'
+    RESULT = '12'
     # header = '12'
 
 def get_header_value():
@@ -21,4 +21,4 @@ def get_header_value():
     return header
 
 if __name__ == '__main__':
-    print(global_var.Id.value)
+    print(GLOBAL_VAR.ID.value)

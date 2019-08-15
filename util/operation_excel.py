@@ -1,49 +1,52 @@
 # coding:utf-8
-import xlrd
-from xlutils.copy import copy
-import sys
-sys.path.append("d:/python/testCodeReview/")
-# data = xlrd.open_workbook('../dataconfig/interface.xlsx')
-# tables = data.sheets()[0]
-# print(tables.nrows)
-# print(tables.cell_value(2,3))
+from openpyxl import *
 
 class OperationExcel:
-    def __init__(self, file_name=None, sheet_id=None):
+    def __init__(self,file_name=None,sheet_id=None):
         if file_name:
             self.file_name = file_name
             self.sheet_id = sheet_id
+            self.wb = load_workbook(self.file_name)
+            sheets = self.wb.sheetnames
+            self.sheet = sheets[self.sheet_id]
+            self.tables = self.wb[self.sheet]
         else:
-            self.file_name = '../dataconfig/interface.xls'
+            self.file_name = '../dataconfig/interfaceTest.xlsx'
             self.sheet_id = 0
-        self.data = self.get_data()
+            self.wb = load_workbook(self.file_name)
+            sheets = self.wb.sheetnames
+            self.sheet = sheets[self.sheet_id]
+            self.tables = self.wb[self.sheet]
 
-    # 获取sheet的内容，以0为起点
+    # 获取sheet
     def get_data(self):
-        data = xlrd.open_workbook(self.file_name)
-        tables = data.sheets()[self.sheet_id]
-        return tables
+        sheet_name = self.wb.sheetnames[self.sheet_id]
+        return sheet_name
 
-    # 获取行数，即用例数量
+    # 获取workbook所有sheet名
+    def get_sheet_list(self):
+        sheets_list = self.wb.sheetnames
+        return sheets_list
+
+    # 获取表内最大有效行数
     def get_lines(self):
-        tables = self.data
-        return tables.nrows
+        rows = self.tables.max_row
+        return rows
 
-    # 获取某一个单元格的内容（x,y横竖轴定位）
-    def get_cell_value(self, row, col):
-        return self.data.cell_value(row, col)
+    # 根据行、列获取单元格
+    def get_cell_value(self,row,col):
+        cellvalue = self.tables.cell(row=row, column=col).value
+        return cellvalue
 
-    # 写入数据
-    def write_value(self,row,col,value):
-        '''
-        写入excel数据
-        row,col,value
-        '''
-        read_data = xlrd.open_workbook(self.file_name)
-        write_data = copy(read_data)
-        sheet_data = write_data.get_sheet(0)
-        sheet_data.write(row,col,value)
-        write_data.save(self.file_name)
+    # 在单元格内写入值
+    def write_value(self, row, colunm, cellvalue):
+        try:
+            self.tables.cell(row=row, column=colunm).value = cellvalue
+            self.wb.save(self.file_name)
+            return 'Write Successfully!'
+        except:
+            self.tables.cell(row=row, column=colunm).value = "writefail"
+            self.wb.save(self.file_name)
 
     # 根据对应的caseid找到对应行的内容
     def get_rows_data(self,case_id):
@@ -75,7 +78,11 @@ class OperationExcel:
         return cols
 
 if __name__ == '__main__':
-    opers = OperationExcel()
-    print(opers.get_data().nrows)
-    print(opers.get_lines())
-    print(opers.get_cell_value(1,2))
+    file_name = '../dataconfig/interfaceTest.xlsx'
+    sheet_id = 0
+    testexcel = OperationExcel(file_name,sheet_id)
+    print(testexcel.get_lines())
+    print(testexcel.get_sheet_list())
+    print(testexcel.get_cell_value(2,1))
+    print(testexcel.get_data())
+    print("There are write call value : ",testexcel.write_value(11,1,'白妖大大宇宙第一无敌帅'))
