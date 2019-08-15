@@ -23,6 +23,9 @@ class OperationExcel:
         sheet_name = self.wb.sheetnames[self.sheet_id]
         return sheet_name
 
+    def get_test(self):
+        pass
+
     # 获取workbook所有sheet名
     def get_sheet_list(self):
         sheets_list = self.wb.sheetnames
@@ -86,3 +89,4 @@ if __name__ == '__main__':
     print(testexcel.get_cell_value(2,1))
     print(testexcel.get_data())
     print("There are write call value : ",testexcel.write_value(11,1,'白妖大大宇宙第一无敌帅'))
+    print(testexcel.get_test())

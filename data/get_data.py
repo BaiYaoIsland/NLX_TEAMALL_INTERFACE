@@ -81,7 +81,7 @@ class GetData:
 
     # 获取依赖数据的key
     def get_depend_key(self,row):
-        col = int(data_config.GLOBAL_VAR.DATA_DEPEND)
+        col = int(data_config.GLOBAL_VAR.DATA_DEPEND.value)
         depend_key = self.opera_excel.get_cell_value(row,col)
         if depend_key == "":
             return None
@@ -90,7 +90,7 @@ class GetData:
 
     # 判断是否有case依赖
     def is_depend(self,row):
-        col = int(data_config.GLOBAL_VAR.CASE_DEPEND)
+        col = int(data_config.GLOBAL_VAR.CASE_DEPEND.value)
         depend_case_id = self.opera_excel.get_cell_value(row,col)
         if depend_case_id == "":
             return None
@@ -99,7 +99,7 @@ class GetData:
 
     # 获取数据依赖字段
     def get_depend_fileld(self,row):
-        col = int(data_config.GLOBAL_VAR.FIELD_DEPEND)
+        col = int(data_config.GLOBAL_VAR.FIELD_DEPEND.value)
         data = self.opera_excel.get_cell_value(row,col)
         if data == "":
             return None
@@ -114,3 +114,4 @@ if __name__ == '__main__':
     print('This is request data :',data.get_request_data(8))
     print('This is header data :',data.is_header(2))
     print('This is method :',data.get_request_method(4))
+    print('This is depend fileld :',data.get_depend_fileld(8))

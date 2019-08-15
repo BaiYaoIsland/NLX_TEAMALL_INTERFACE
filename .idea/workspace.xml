@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36d14a3f-6742-4681-bcd0-85b1dc99fd90" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/data/data_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/get_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconfig/interfaceTest.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/dataconfig/interfaceTest.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/operation_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/operation_excel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/send_email.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/util/operation_excel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="80" column="27" lean-forward="true" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+            <state relative-caret-position="882">
+              <caret line="91" column="31" lean-forward="true" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -70,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/get_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="106" column="23" lean-forward="true" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+            <state relative-caret-position="186">
+              <caret line="103" column="22" lean-forward="true" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
               <folding>
                 <element signature="e#16#63#0" expanded="true" />
               </folding>
@@ -153,8 +152,8 @@
         <option value="$PROJECT_DIR$/main/run_test.py" />
         <option value="$PROJECT_DIR$/util/send_email.py" />
         <option value="$PROJECT_DIR$/data/data_config.py" />
-        <option value="$PROJECT_DIR$/util/operation_excel.py" />
         <option value="$PROJECT_DIR$/data/get_data.py" />
+        <option value="$PROJECT_DIR$/util/operation_excel.py" />
       </list>
     </option>
   </component>
@@ -229,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_data">
+  <component name="RunManager" selected="Python.operation_excel">
     <configuration name="data_config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testCodeReview" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -349,8 +348,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.get_data" />
         <item itemvalue="Python.operation_excel" />
+        <item itemvalue="Python.get_data" />
         <item itemvalue="Python.data_config" />
         <item itemvalue="Python.send_email" />
         <item itemvalue="Python.run_test" />
@@ -378,22 +377,23 @@
       <workItem from="1564994296988" duration="19000" />
       <workItem from="1565247263902" duration="2771000" />
       <workItem from="1565863960197" duration="311000" />
-      <workItem from="1565875406279" duration="3676000" />
+      <workItem from="1565875406279" duration="4532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7902000" />
+    <option name="totallyTimeSpent" value="8758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1024" height="1054" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25356415" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25356415" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42203742" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42203742" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39462128" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -464,10 +464,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/testCodeReview$send_email.coverage" NAME="send_email Coverage Results" MODIFIED="1565876870844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
-    <SUITE FILE_PATH="coverage/testCodeReview$operation_excel.coverage" NAME="operation_excel Coverage Results" MODIFIED="1565882576845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/testCodeReview$operation_excel.coverage" NAME="operation_excel Coverage Results" MODIFIED="1565883391651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/testCodeReview$data_config.coverage" NAME="data_config Coverage Results" MODIFIED="1565877424523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
     <SUITE FILE_PATH="coverage/testCodeReview$run_test.coverage" NAME="run_test Coverage Results" MODIFIED="1565517085926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
-    <SUITE FILE_PATH="coverage/testCodeReview$get_data.coverage" NAME="get_data Coverage Results" MODIFIED="1565882582225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/testCodeReview$get_data.coverage" NAME="get_data Coverage Results" MODIFIED="1565882949038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://F:/Python36/Lib/idlelib/outwin.py" />
@@ -562,8 +562,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/get_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="106" column="23" lean-forward="true" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+        <state relative-caret-position="186">
+          <caret line="103" column="22" lean-forward="true" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
           <folding>
             <element signature="e#16#63#0" expanded="true" />
           </folding>
@@ -572,8 +572,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/util/operation_excel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="80" column="27" lean-forward="true" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+        <state relative-caret-position="882">
+          <caret line="91" column="31" lean-forward="true" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
         </state>
       </provider>
     </entry>
