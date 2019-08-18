@@ -1,17 +1,22 @@
 # coding:utf-8
-import sys
-sys.path.append("/Users/jhzhang/Python_Code/testCodeReview-master/testCodeReview/")
 from base.runmethod import RunMethod
 from data.get_data import GetData
 from util.common_util import CommonUtil
 from data.dependent_data import DependentData
 from util.send_email import SendEmail
+import HTMLTestRunner
+from log.user_log import UserLog
+
+logger = UserLog().get_log()
+
 class RunTest:
     def __init__(self):
         self.run = RunMethod()
         self.data = GetData()
         self.com_util = CommonUtil()
         self.send_mail = SendEmail()
+        self.log = UserLog()
+        self.logger = UserLog.get_log()
 
     # 程序执行的主入口
     def go_on_run(self):
@@ -23,8 +28,8 @@ class RunTest:
             is_run = self.data.get_is_run(i)
             if is_run:
                 url = self.data.get_request_url(i)
-                if i == 7:
-                    print("已经成年")
+                # if i == 7:
+                #     print("已经成年")
                 # url = 'http://192.168.2.81:10003/shop/goods/new-list'
                 method = self.data.get_request_method(i)
                 is_run = self.data.get_is_run(i)
@@ -65,4 +70,8 @@ class RunTest:
 
 if __name__ == '__main__':
     run = RunTest()
-    print(run.go_on_run())
+    run.go_on_run()
+    filepath = '../report/htmlreport1.html'
+    fp = open(filepath, 'wb')
+    runer = HTMLTestRunner.HTMLTestRunner(stream=fp, title='this is first report')
+    runer.run(run)

@@ -61,7 +61,7 @@ class GetData:
 
     # 获取预期结果
     def get_expcet_data(self, row):
-        col = int(data_config.get_expect())
+        col = int(data_config.GLOBAL_VAR.ECPECT.value)
         expect = self.opera_excel.get_cell_value(row, col)
         if expect == '':
             return None
@@ -115,3 +115,4 @@ if __name__ == '__main__':
     print('This is header data :',data.is_header(2))
     print('This is method :',data.get_request_method(4))
     print('This is depend fileld :',data.get_depend_fileld(8))
+    print('This is get expect data :',data.get_expcet_data(2))
